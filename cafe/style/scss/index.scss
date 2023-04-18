@@ -25,13 +25,15 @@ header {
     }
 
     nav {
-        width: 78%;
+        width: 80%;
         
         ul {
             @include flex (row, no-wrap, flex-end);
+            align-items: center;
+            align-content: center;
 
             li {
-                margin: 1rem .7rem;
+                margin: 1rem;
                 text-transform: uppercase;
                 font-family: $important-info-font;
 
@@ -174,6 +176,7 @@ section > div {
                 text-align: center;
                 font-size: .9rem;
                 font-weight: 200;
+                margin-top: .5rem;
             }
         }
     }
