@@ -17,7 +17,7 @@ html p {
   font-family: "Nunito", sans-serif;
 }
 html hr {
-  width: 30%;
+  width: 20%;
   height: 2px;
   background-color: #252525;
   border-radius: 2rem;
@@ -436,4 +436,98 @@ section > div {
 .coffee-house-coffee-brands .coffee-brands img {
   width: 30%;
   padding: 1rem;
+}
+
+.menu {
+  padding-top: 7rem;
+}
+.menu h1, .menu h2, .menu h3, .menu h4, .menu h5, .menu h6, .menu p {
+  color: #252525;
+}
+.menu hr {
+  margin: 2rem auto;
+}
+.menu .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu .items .item {
+  width: 21%;
+}
+.menu .items .item .item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto 3rem auto;
+}
+.menu .items .item .item-info p {
+  font-size: 1.1rem;
+}
+.menu .items .item .item-info p:last-child {
+  font-weight: 800;
+}
+.menu .items .item img {
+  width: 100%;
+  height: 100%;
+}
+.menu .items .item:last-child {
+  background-color: #C19B61;
+  width: 19vw;
+  height: 19vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+}
+.menu .items .item:last-child a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu .items .item:last-child a:hover {
+  color: #252525;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu .items .item:last-child a:active {
+  color: #252525;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
