@@ -3,6 +3,25 @@ html {
   color: #FFFFFF;
   font-size: 18px;
 }
+html h2 {
+  font-family: "Neuton", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+html p {
+  font-family: "Nunito", sans-serif;
+}
+html hr {
+  width: 30%;
+  height: 2px;
+  background-color: #252525;
+  border-radius: 2rem;
+}
+html figcaption {
+  display: none;
+}
 
 header {
   background-color: #252525;
@@ -264,4 +283,93 @@ section > div {
   font-size: 0.9rem;
   font-weight: 200;
   margin-top: 0.5rem;
+}
+
+.our-story {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.our-story h1, .our-story h2, .our-story h3, .our-story h4, .our-story h5, .our-story h6, .our-story p {
+  color: #252525;
+}
+.our-story .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding-right: 2rem;
+}
+.our-story .info hr {
+  margin: 2rem auto;
+}
+.our-story .info p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.our-story .info a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.our-story .info a:hover p {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.our-story .info a:active p {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.our-story .info a p {
+  color: #C19B61;
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.our-story .imgs {
+  width: 50%;
+  padding-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.our-story .imgs figure {
+  width: 40%;
+  height: 40%;
+  background-color: cadetblue;
+  margin: 0.5rem 1rem;
+}
+.our-story .imgs figure img {
+  width: 100%;
+  height: 100%;
 }

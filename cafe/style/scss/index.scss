@@ -4,6 +4,29 @@
 html {
     color: $white;
     font-size: 18px;
+
+    h2 {
+        font-family: $important-info-font;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p {
+        font-family: $main-info-font;
+    }
+
+    hr {
+        width: 30%;
+        height: 2px;
+        background-color: $black;
+        border-radius: 2rem;
+    }
+    
+    figcaption {
+        display: none;
+    }
 }
 
 header {
@@ -177,6 +200,67 @@ section > div {
                 font-size: .9rem;
                 font-weight: 200;
                 margin-top: .5rem;
+            }
+        }
+    }
+}
+
+.our-story {
+    @include text-black;
+    padding: 2rem 0;
+    @include flex (row, no-wrap, space-between);
+
+    .info {
+        @include flex (column, no-wrap, center);
+        width: 50%;
+        padding-right: 2rem;
+        hr {
+            margin: 2rem auto;
+        }
+        p {
+            text-align: center;
+            line-height: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 2rem;
+
+            &:hover {
+                p {
+                    color: $darkbrown;
+                    transition: all .3s;
+                }
+            }
+            &:active {
+                p {
+                    color: $darkbrown;
+                    transition: all .3s;
+                }
+            }
+
+            p {
+                color: $brown;
+                font-weight: 600;
+                transition: all .3s;
+            }
+        }
+    }
+
+    .imgs {
+        width: 50%;
+        padding-left: 2rem;
+        @include flex (row, wrap, flex-start);
+
+        figure {
+            width: 40%;
+            height: 40%;
+            background-color: cadetblue;
+            margin: .5rem 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
     }
