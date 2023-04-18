@@ -4,3 +4,26 @@
     flex-wrap: $wrap;
     justify-content: $justify;
 }
+
+@mixin text-black {
+    h1, h2, h3, h4, h5, h6, p {
+        color: $black;
+    }
+}
+
+@mixin text-font {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $important-info-font;
+    }
+
+    p {
+        font-family: $main-info-font;
+    }
+}
+
+@mixin bg-img ($img, $repeat, $size) {
+    background-image: $img;
+    background-repeat: $repeat;
+    background-size: $size;
+
+}

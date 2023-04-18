@@ -3,6 +3,7 @@
 
 html {
     color: $white;
+    font-size: 18px;
 }
 
 header {
@@ -51,6 +52,128 @@ header {
                         text-decoration: underline;
                     }
                 }
+            }
+        }
+    }
+}
+
+section > div {
+    width: 80%;
+    margin: 0 auto;;
+}
+
+.coffee-house-starting-page {
+    background-color: $lightbeige;
+    width: 98.9vw;
+    height: 93vh;
+}
+
+.starting-page {
+    @include flex(row, no-wrap, space-between);
+    @include text-black;
+    @include text-font;
+
+    .info {
+        width: 43%;
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .main-info {
+            @include flex (column, no-wrap, flex-start);
+            padding: 8rem 0;
+            height: calc(93vh - 2*8rem);
+            p {
+                font-weight: 600;
+            }
+
+            a {
+                margin: 12rem 0;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all .3s;
+
+                &:hover {
+                    .btn {
+                        background-color: $lightbrown;
+                        transition: all .3s;
+                        p {
+                            color: $black;
+                            transition: all .3s;
+                        }
+                    }
+                }
+                &:active {
+                    .btn {
+                        background-color: $lightbrown;
+                        transition: all .3s;
+                        p {
+                            color: $black;
+                            transition: all .3s;
+                        }
+                    }
+                }
+
+                .btn {
+                    background-color: $brown;
+                    width: 40%;
+                    text-align: center;
+                    border: 1px solid $darkbrown;
+                    border-radius: 2rem;
+                    box-shadow: -72px -71px 400px -55px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: -72px -71px 400px -55px rgba(0,0,0,0.75);
+                    -moz-box-shadow: -72px -71px 400px -55px rgba(0,0,0,0.75);
+                    transition: all .3s;
+                    p {
+                        color: $white;
+                        padding: 1rem;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .hours-address {
+        width: 57%;
+        height: 93vh;
+        @include bg-img ($index-main-img, no-repeat, cover);
+        @include flex (row, no-wrap, flex-start);
+        align-items: end;
+
+        article {
+            width: 50%;
+            height: 35%;
+            @include flex (column, no-wrap, center);
+            &:first-child {
+                background-color: $black;
+            }
+            &:last-child {
+                background-color: $brown;
+            }
+            h3, p {
+                color: $white;
+            }
+            h3 {
+                font-family: $important-info-font;
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            hr {
+                width: 50%;
+                height: 1px;
+                color: $white;
+                background-color: $white;
+                border-radius: 2rem;
+                margin: 1rem auto;
+            }
+            p {
+                text-align: center;
+                font-size: .9rem;
+                font-weight: 200;
             }
         }
     }
