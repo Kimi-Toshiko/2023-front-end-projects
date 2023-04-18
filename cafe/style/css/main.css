@@ -3,6 +3,9 @@ html {
   color: #FFFFFF;
   font-size: 18px;
 }
+html h1 {
+  font-family: "Neuton", serif;
+}
 html h2 {
   font-family: "Neuton", serif;
   font-size: 2.5rem;
@@ -44,6 +47,7 @@ header {
   margin: 0 auto;
 }
 .navbar .cafe-logo {
+  font-family: "Nunito", sans-serif !important;
   color: #C19B61;
   font-size: 1.5rem;
   font-style: italic;
@@ -151,6 +155,7 @@ section > div {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .starting-page .info .main-info {
   display: -webkit-box;
@@ -172,11 +177,13 @@ section > div {
   font-weight: 600;
 }
 .starting-page .info .main-info a {
-  margin: 12rem 0;
+  margin: 10rem 0;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  width: 40%;
+  border-radius: 2rem;
 }
 .starting-page .info .main-info a:hover .btn {
   background-color: #f0ce9a;
@@ -200,7 +207,7 @@ section > div {
 }
 .starting-page .info .main-info a .btn {
   background-color: #C19B61;
-  width: 40%;
+  width: 100%;
   text-align: center;
   border: 1px solid #8f682d;
   border-radius: 2rem;
@@ -329,7 +336,8 @@ section > div {
 .our-story .info a {
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 2rem;
+  width: 30%;
+  margin: 2rem auto 0 auto;
 }
 .our-story .info a:hover p {
   color: #8f682d;
@@ -372,4 +380,60 @@ section > div {
 .our-story .imgs figure img {
   width: 100%;
   height: 100%;
+}
+
+.coffee-house-coffee-brands {
+  width: 98.9vw;
+  background-color: #C19B61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.coffee-house-coffee-brands .coffee-brands {
+  width: 98.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.coffee-house-coffee-brands .coffee-brands figure {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.coffee-house-coffee-brands .coffee-brands img {
+  width: 30%;
+  padding: 1rem;
 }
