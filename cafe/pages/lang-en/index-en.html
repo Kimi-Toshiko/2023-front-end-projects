@@ -485,6 +485,61 @@
                 </form>
             </div>
         </section>
+
+        <section class="coffee-house-reserve">
+            <div class="reserve-table">
+                <h2>Reserve a table</h2>
+                <hr>
+                <div class="reservation">
+                    <figure>
+                        <img src="../../assets/imgs/index/coffee-beans-in-big-pot.jpg" alt="Cofffee beans">
+                        <figcaption>CCoffee beans</figcaption>
+                    </figure>
+                    <div class="reservation-form">
+                        <form action="#">
+                            <div class="date">
+                                <label for="reservation-date">Date</label>
+                                <input type="date" name="reservation-date" value="reservation-date" id="reservation-date">
+                            </div>
+
+                            <div class="time">
+                                <label for="reservation-time">Time</label>
+                                <input type="time" name="reservation-time" value="reservation-time" id="reservation-time">
+                            </div>
+
+                            <div class="guests">
+                                <label for="reservation-guests">Guests</label>
+                                <select id="reservation-guests">
+                                    <option value="none">...</option>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five-eight">5-8</option>
+                                    <option value="nine-twelve">9-12</option>
+                                    <option value="twelve-plus">12+</option>
+                                </select>
+                            </div>
+
+                            <div class="name">
+                                <label for="reservation-name">Your Name</label>
+                                <input type="text" id="reservation-name" value="reservation-name" name="reservation-name">
+                            </div>
+                            
+                            <div class="phone">
+                                <label for="reservation-phone">Your Phone</label>
+                                <input type="number" name="reservation-phone" id="reservation-phone" value="reservation-phone">
+                            </div>
+
+                            <div class="email">
+                                <label for="reservation-email"></label>
+                                <input type="email" name="reservation-email" value="reservation-email" id="reservation-email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
