@@ -1,0 +1,57 @@
+@import 'mixins';
+@import 'vars';
+
+html {
+    color: $white;
+}
+
+header {
+    background-color: $black;
+}
+
+.navbar {
+    @include flex(row, no-wrap, space-between);
+    width: 80%;
+    margin: 0 auto;
+
+    .cafe-logo {
+        color: $brown;
+        font-size: 1.5rem;
+        font-style: italic;
+        @include flex(column, no-wrap, center);
+        width: 20%;
+        margin: 1rem auto;
+    }
+
+    nav {
+        width: 78%;
+        
+        ul {
+            @include flex (row, no-wrap, flex-end);
+
+            li {
+                margin: 1rem .7rem;
+                text-transform: uppercase;
+                font-family: $important-info-font;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:hover {
+                        color: $brown;
+                        transition: all .3s;
+                    }
+                    &:active {
+                        color: $brown;
+                        transition: all .3s;
+                    }
+                    &:visited {
+                        color: $lightgray;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
