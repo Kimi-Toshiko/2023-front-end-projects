@@ -813,3 +813,53 @@ section > div {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.products {
+  padding-top: 2rem;
+}
+.products h1, .products h2, .products h3, .products h4, .products h5, .products h6, .products p {
+  color: #252525;
+}
+.products hr {
+  margin: 2rem auto;
+}
+.products .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.products .items .item {
+  width: 32%;
+  height: 40%;
+}
+.products .items .item figure img {
+  width: 100%;
+  height: 100%;
+}
+.products .items .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+.products .items .item .info p:last-child {
+  font-weight: 800;
+}

@@ -550,3 +550,33 @@ section > div {
         }
     }
 }
+
+.products {
+    padding-top: 2rem;
+    @include text-black;
+    hr {
+        margin: 2rem auto;
+    }
+    .items {
+        @include flex (row, no-wrap, space-between);
+        .item {
+            width: 32%;
+            height: 40%;
+            figure {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .info {
+                @include flex (row, no-wrap, space-between);
+                margin-top: 1rem;
+                p {
+                    &:last-child {
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}
