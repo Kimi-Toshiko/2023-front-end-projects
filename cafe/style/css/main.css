@@ -980,9 +980,119 @@ section > div {
 }
 .coffee-house-team .people .person .social-media {
   margin-top: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .coffee-house-team .people .person .social-media i {
   color: #C19B61;
   margin: auto 0.5rem;
   font-size: 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-team .people .person .social-media a:hover i {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-team .people .person .social-media a:active i {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.coffee-house-recipes {
+  position: relative;
+  margin-top: 4rem;
+}
+.coffee-house-recipes .info {
+  position: absolute;
+  z-index: 1000;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.coffee-house-recipes .info h2 {
+  margin-bottom: 3rem;
+}
+.coffee-house-recipes .info a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+.coffee-house-recipes .info a .btn {
+  background-color: #C19B61;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .info a .btn p {
+  color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .info a:hover .btn {
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .info a:hover .btn p {
+  color: #C19B61;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .info a:active .btn {
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .info a:active .btn p {
+  color: #C19B61;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-recipes .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-recipes .items .item {
+  width: 32%;
+  height: 32%;
+}
+.coffee-house-recipes .items .item figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
