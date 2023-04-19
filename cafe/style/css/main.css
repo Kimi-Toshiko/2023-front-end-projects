@@ -583,9 +583,68 @@ section > div {
 }
 
 .coffee-house-croissants-discount {
-  background-image: url("../../assets/imgs/index/croissant-on-the-table.jpg");
-  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/croissant-on-the-table.jpg") no-repeat;
+  background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/croissant-on-the-table.jpg") no-repeat;
   background-size: cover;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
+}
+.coffee-house-croissants-discount h1, .coffee-house-croissants-discount h2, .coffee-house-croissants-discount h3, .coffee-house-croissants-discount h4, .coffee-house-croissants-discount h5, .coffee-house-croissants-discount h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-croissants-discount p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-croissants-discount h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  width: 60%;
+  font-weight: 600;
+  line-height: 4.5rem;
+  padding: 2rem 0 3rem 0;
+}
+.coffee-house-croissants-discount a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 10%;
+}
+.coffee-house-croissants-discount a .btn {
+  background-color: #C19B61;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-croissants-discount a:hover {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-croissants-discount a:hover .btn {
+  background-color: #F4EDE3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }

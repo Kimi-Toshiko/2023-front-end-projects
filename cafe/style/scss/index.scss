@@ -398,7 +398,44 @@ section > div {
 }
 
 .coffee-house-croissants-discount {
-    @include bg-img ($index-discount, no-repeat, cover);
+    background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), $index-discount no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
+    @include text-font;
+    h3 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        width: 60%;
+        font-weight: 600;
+        line-height: 4.5rem;
+        padding: 2rem 0 3rem 0;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: all .3s;
+        width: 10%;
+        .btn {
+            background-color: $brown;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            @include flex (column, no-wrap, center);
+            align-items: center;
+            align-content: center;
+            border-radius: 2rem;
+            transition: all .3s;
+        }
+        &:hover {
+            color: $darkbrown;
+            transition: all .3s;
+            .btn {
+                background-color: $lightbeige;
+                transition: all .3s;
+            }
+        }
+    }
 }
