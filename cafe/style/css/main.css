@@ -863,3 +863,82 @@ section > div {
 .products .items .item .info p:last-child {
   font-weight: 800;
 }
+
+.coffee-house-reviews {
+  padding: 5rem 0;
+  background-color: #C19B61;
+  margin: 4rem auto;
+}
+.coffee-house-reviews hr {
+  margin: 2rem auto;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.coffee-house-reviews .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-reviews .reviews .review {
+  background-color: #FFFFFF;
+  width: 29%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 2rem 1rem;
+}
+.coffee-house-reviews .reviews .review h1, .coffee-house-reviews .reviews .review h2, .coffee-house-reviews .reviews .review h3, .coffee-house-reviews .reviews .review h4, .coffee-house-reviews .reviews .review h5, .coffee-house-reviews .reviews .review h6, .coffee-house-reviews .reviews .review p {
+  color: #252525;
+}
+.coffee-house-reviews .reviews .review figure img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+}
+.coffee-house-reviews .reviews .review p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.coffee-house-reviews .reviews .review p.name {
+  margin: 1rem auto;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1rem;
+}
+.coffee-house-reviews .reviews .review hr {
+  height: 2px;
+  width: 50%;
+  background-color: #252525;
+  border-color: #252525;
+}
+.coffee-house-reviews .reviews .review i {
+  color: #C19B61;
+  font-size: 1.5rem;
+  margin: auto 0.5rem;
+}
+.coffee-house-reviews .reviews .review:nth-child(2) i:last-child {
+  color: #F4EDE3;
+}

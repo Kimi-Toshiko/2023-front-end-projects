@@ -580,3 +580,61 @@ section > div {
         }
     }
 }
+
+.coffee-house-reviews {
+    padding: 5rem 0;
+    background-color: $brown;
+    margin: 4rem auto;
+    hr {
+        margin: 2rem auto;
+        background-color: $white;
+        border-color: $white
+    }
+    .reviews {
+        @include flex (row, no-wrap, space-between);
+        .review {
+            background-color: $white;
+            width: 29%;
+            @include text-black;
+            @include flex (column, no-wrap, space-between);
+            align-items: center;
+            align-content: center;
+            padding: 2rem 1rem;
+            figure {
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 5rem;
+                }
+            }
+            p {
+                text-align: center;
+                line-height: 1.5rem;
+            }
+            p.name {
+                margin: 1rem auto;
+                font-weight: 800;
+                font-size: 1.1rem;
+                line-height: 1rem;
+            }
+            hr {
+                height: 2px;
+                width: 50%;
+                background-color: $black;
+                border-color: $black;
+            }
+            i {
+                color: $brown;
+                font-size: 1.5rem;
+                margin: auto .5rem;
+            }
+            &:nth-child(2) {
+                i {
+                    &:last-child {
+                        color: $lightbeige;
+                    }
+                }
+            }
+        }
+    }
+}
