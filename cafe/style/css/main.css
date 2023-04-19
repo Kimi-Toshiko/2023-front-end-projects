@@ -942,3 +942,47 @@ section > div {
 .coffee-house-reviews .reviews .review:nth-child(2) i:last-child {
   color: #F4EDE3;
 }
+
+.coffee-house-team {
+  padding: 2rem 0;
+}
+.coffee-house-team h1, .coffee-house-team h2, .coffee-house-team h3, .coffee-house-team h4, .coffee-house-team h5, .coffee-house-team h6, .coffee-house-team p {
+  color: #252525;
+}
+.coffee-house-team hr {
+  margin: 2rem auto;
+}
+.coffee-house-team .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-team .people .person {
+  width: 24%;
+  text-align: center;
+}
+.coffee-house-team .people .person figure img {
+  width: 100%;
+  height: 100%;
+}
+.coffee-house-team .people .person .name {
+  margin: 1rem auto 1rem auto;
+  font-weight: 800;
+}
+.coffee-house-team .people .person .social-media {
+  margin-top: 1rem;
+}
+.coffee-house-team .people .person .social-media i {
+  color: #C19B61;
+  margin: auto 0.5rem;
+  font-size: 1.2rem;
+}

@@ -638,3 +638,36 @@ section > div {
         }
     }
 }
+
+.coffee-house-team {
+    @include text-black;
+    padding: 2rem 0;
+    hr {
+        margin: 2rem auto;
+    }
+    .people {
+        @include flex (row, no-wrap, space-between);
+        .person {
+            width: 24%;
+            text-align: center;
+            figure {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .name {
+                margin: 1rem auto 1rem auto;
+                font-weight: 800;
+            }
+            .social-media {
+                margin-top: 1rem;
+                i {
+                    color: $brown;
+                    margin: auto .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
