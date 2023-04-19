@@ -398,8 +398,7 @@ section > div {
 }
 
 .coffee-house-croissants-discount {
-    background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), $index-discount no-repeat;
-    background-size: cover;
+    @include bg-dark ($index-discount, cover);
     width: 100%;
     height: 75vh;
     @include text-font;
@@ -418,7 +417,7 @@ section > div {
         text-transform: uppercase;
         font-weight: 500;
         transition: all .3s;
-        width: 10%;
+        width: 15%;
         .btn {
             background-color: $brown;
             padding: 1rem 1.5rem;
@@ -435,6 +434,118 @@ section > div {
             .btn {
                 background-color: $lightbeige;
                 transition: all .3s;
+            }
+        }
+    }
+}
+
+.advantages {
+    @include text-black;
+    color: $black;
+    padding: 3rem 0;
+    hr {
+        margin: 2rem auto;
+    }
+    .items {
+        @include flex (row, no-wrap, space-between);
+        .item {
+            margin: 0 1rem;
+            text-align: center;
+            i {
+                color: $brown;
+                font-size: 3rem;
+                margin: 1rem auto 1.5rem auto;
+            }
+            p {
+                line-height: 1.5rem;
+            }
+            p.heading {
+                text-transform: uppercase;
+                font-weight: 800;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .discounts {
+        @include flex (row, no-wrap, space-between);
+        align-content: center;
+        align-items: center;
+        .discount {
+            width: 51%;
+            padding: 4rem 0;
+            margin-top: 3rem;
+            @include flex (column, no-wrap, space-between);
+            align-content: center;
+            align-items: center;
+            &:first-child {
+                background-color: $brown;
+            }
+            &:last-child {
+                @include bg-dark ($index-latte, cover);
+                a {
+                    background-color: $brown;
+                    p {
+                        color: $white;
+                    }
+                    &:hover {
+                        background-color: $white;
+                        transition: all .3s;
+                        p {
+                            color: $brown;
+                            transition: all .3s;
+                        }
+                    }
+                    &:active {
+                        background-color: $white;
+                        transition: all .3s;
+                        p {
+                            color: $brown;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+            .name {
+                font-family: $important-info-font;
+                font-weight: 700;
+                color: $white;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            hr {
+                background-color: $white;
+                border-color: $white;
+                border-radius: 2rem;
+                margin: 3rem auto;
+            }
+            a {
+                display: block;
+                background-color: $white;
+                padding: 1rem 1.5rem;
+                border-radius: 2rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all .3s;
+                p {
+                    color: $brown;
+                    transition: all .3s;
+                }
+                &:hover {
+                    background-color: $darkbrown;
+                    transition: all .3s;
+                    p {
+                        color: $white;
+                        transition: all .3s;
+                    }
+                }
+                &:active {
+                    background-color: $darkbrown;
+                    transition: all .3s;
+                    p {
+                        color: $white;
+                        transition: all .3s;
+                    }
+                }
             }
         }
     }
