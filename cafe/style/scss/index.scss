@@ -692,15 +692,11 @@ section > div {
     position: relative;
     margin-top: 4rem;
     .info {
-        position: absolute;
+        @include center-thru-position;
         z-index: 1000;
         color: $white;
         @include flex (column, no-wrap, space-between);
         text-align: center;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
         h2 {
             margin-bottom: 3rem;
         }
@@ -771,13 +767,8 @@ section > div {
             width: 80%;
             height: 90%;
             text-align: center;
-            position: absolute;
             line-height: 1.5rem;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-            // background-color: lightsalmon;
+            @include center-thru-position;
             @include flex (column, no-wrap, center);
             hr {
                 margin: 1.5rem auto;
@@ -987,4 +978,62 @@ section > div {
     display: grid;
     grid-template-columns: [first-column] 30% [second-column] 30% [third-column] 40%;
     grid-template-rows: [first-row] 15rem [second-row] 15rem;
+}
+
+.coffee-house-subscribe {
+    @include bg-dark ($index-subscribe, cover);
+    margin-top: 4rem;
+    height: 20rem;
+    position: relative;
+
+    .subscribe {
+        @include center-thru-position;
+        h2 {
+            margin-bottom: 3rem;
+        }
+        form {
+            @include flex(row, no-wrap, center);
+            label {
+                text-transform: uppercase;
+                font-family: $main-info-font;
+                align-self: center;
+            }
+            input {
+                width: 45%;
+                height: 2.1rem;
+                margin: 0 1rem;
+                border-color: rgba(256,256,256,0.7);
+                background-color: rgba(256,256,256,0.7);
+                border-radius: 10rem;
+                padding: .5rem 1rem .5rem 1rem;
+                color: $black;
+                font-family: $main-info-font;
+                font-style: italic;
+                transition: .3s all;
+                &:hover {
+                    transform: scale(1.01);
+                    transition: .3s all;
+                }
+                &:active {
+                    transform: scale(1.01);
+                    transition: .3s all;
+                }
+            }
+            button {
+                padding: 0 1.5rem 0 1.5rem;
+                border-radius: 5rem;
+                border-color: $brown;
+                background-color: $brown;
+                color: $white;
+                text-transform: uppercase;
+                transition: .3s all;
+                &:hover {
+                    background-color: $white;
+                    border-color: $white;
+                    color: $brown;
+                    transition: .3s all;
+                }
+            }
+        }
+    }
 }
