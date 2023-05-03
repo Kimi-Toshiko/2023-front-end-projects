@@ -1117,6 +1117,11 @@ section > div {
                     border-color: $darkbrown;
                     transition: .3s all;
                 }
+                &:active {
+                    background-color: $darkbrown;
+                    border-color: $darkbrown;
+                    transition: .3s all;
+                }
             }
         }
     }

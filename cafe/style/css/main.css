@@ -1684,3 +1684,9 @@ section > div {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
+.reserve-table .reservation .reservation-form button:active {
+  background-color: #8f682d;
+  border-color: #8f682d;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
