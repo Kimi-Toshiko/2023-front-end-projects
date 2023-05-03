@@ -1481,6 +1481,7 @@ section > div {
   margin-top: 4rem;
   height: 20rem;
   position: relative;
+  z-index: -1000;
 }
 .coffee-house-subscribe .subscribe {
   position: absolute;
@@ -1554,6 +1555,132 @@ section > div {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #C19B61;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.reserve-table {
+  margin-top: 4rem;
+}
+.reserve-table h1, .reserve-table h2, .reserve-table h3, .reserve-table h4, .reserve-table h5, .reserve-table h6, .reserve-table p {
+  color: #252525;
+}
+.reserve-table h1, .reserve-table h2, .reserve-table h3, .reserve-table h4, .reserve-table h5, .reserve-table h6 {
+  font-family: "Neuton", serif;
+}
+.reserve-table p {
+  font-family: "Nunito", sans-serif;
+}
+.reserve-table hr {
+  margin: 2rem auto 0 auto;
+}
+.reserve-table .reservation {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  box-shadow: 0px 0px 59px -19px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 59px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 59px -19px rgba(0, 0, 0, 0.75);
+}
+.reserve-table .reservation figure {
+  width: 40%;
+}
+.reserve-table .reservation figure img {
+  width: 100%;
+  height: auto;
+}
+.reserve-table .reservation .reservation-form {
+  width: 56%;
+}
+.reserve-table .reservation .reservation-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 4rem);
+  padding: 2rem;
+}
+.reserve-table .reservation .reservation-form .input-container {
+  color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.7rem;
+}
+.reserve-table .reservation .reservation-form .input-container label {
+  margin-bottom: 0.5rem;
+  font-family: "Nunito", sans-serif;
+}
+.reserve-table .reservation .reservation-form .input-container input, .reserve-table .reservation .reservation-form .input-container select {
+  height: 2.5rem;
+  border-radius: 5rem;
+  border-color: #C19B61;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 1rem;
+}
+.reserve-table .reservation .reservation-form .date {
+  width: 38%;
+}
+.reserve-table .reservation .reservation-form .time {
+  width: 18%;
+}
+.reserve-table .reservation .reservation-form .guests {
+  width: 28%;
+}
+.reserve-table .reservation .reservation-form .name {
+  width: 34%;
+}
+.reserve-table .reservation .reservation-form .phone {
+  width: 54%;
+}
+.reserve-table .reservation .reservation-form .email {
+  width: 67%;
+}
+.reserve-table .reservation .reservation-form button {
+  width: 27%;
+  height: 3rem;
+  margin-top: 3.5rem;
+  border-color: #C19B61;
+  background-color: #C19B61;
+  border-radius: 5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.reserve-table .reservation .reservation-form button:hover {
+  background-color: #8f682d;
+  border-color: #8f682d;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
