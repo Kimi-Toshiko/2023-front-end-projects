@@ -1924,6 +1924,10 @@ footer .copyright p {
   text-transform: uppercase;
 }
 
+.coffee-house-about-us {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 .coffee-house-about-us h1, .coffee-house-about-us h2, .coffee-house-about-us h3, .coffee-house-about-us h4, .coffee-house-about-us h5, .coffee-house-about-us h6, .coffee-house-about-us p {
   color: #252525;
 }
@@ -1933,7 +1937,43 @@ footer .copyright p {
 .coffee-house-about-us p {
   font-family: "Nunito", sans-serif;
 }
-.coffee-house-about-us .about-us img {
-  width: 10%;
-  height: auto;
+.coffee-house-about-us .about-us hr {
+  margin: 2rem auto;
+}
+.coffee-house-about-us .about-us p {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+}
+.coffee-house-about-us .about-us .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem auto;
+  width: 60%;
+}
+.coffee-house-about-us .about-us .images figure:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.coffee-house-about-us .about-us .images figure img {
+  width: 95%;
 }

@@ -16,10 +16,28 @@
 .coffee-house-about-us {
     @include text-black;
     @include text-font;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     .about-us {
-        img {
-            width: 10%;
-            height: auto;
+        hr {
+            margin: 2rem auto;
+        }
+        p {
+            width: 60%;
+            margin: 0 auto 1rem auto;
+        }
+        .images {
+            @include flex (row, no-wrap, space-between);
+            margin: 2rem auto;
+            width: 60%;
+            figure {
+                &:last-child {
+                    @include flex (row, no-wrap, flex-end);
+                }
+                img {
+                    width: 95%;
+                }
+            }
         }
     }
 }
