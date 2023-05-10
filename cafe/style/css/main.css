@@ -127,6 +127,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
+  z-index: 2;
   right: 2rem;
   top: 1rem;
   background-color: #8f682d;
@@ -1481,7 +1482,7 @@ section > div {
   margin-top: 4rem;
   height: 20rem;
   position: relative;
-  z-index: -1000;
+  z-index: 1;
 }
 .coffee-house-subscribe .subscribe {
   position: absolute;
@@ -1689,4 +1690,96 @@ section > div {
   border-color: #8f682d;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+
+.upcoming-events {
+  width: 100%;
+}
+.upcoming-events h1, .upcoming-events h2, .upcoming-events h3, .upcoming-events h4, .upcoming-events h5, .upcoming-events h6, .upcoming-events p {
+  color: #252525;
+}
+.upcoming-events h1, .upcoming-events h2, .upcoming-events h3, .upcoming-events h4, .upcoming-events h5, .upcoming-events h6 {
+  font-family: "Neuton", serif;
+}
+.upcoming-events p {
+  font-family: "Nunito", sans-serif;
+}
+.upcoming-events .events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6rem;
+  width: 100%;
+}
+.upcoming-events .events .event {
+  width: 25%;
+}
+.upcoming-events .events .event:first-child, .upcoming-events .events .event:nth-child(3) {
+  background-color: #C19B61;
+}
+.upcoming-events .events .event:first-child .date-number, .upcoming-events .events .event:first-child .date-month, .upcoming-events .events .event:nth-child(3) .date-number, .upcoming-events .events .event:nth-child(3) .date-month {
+  color: #C19B61 !important;
+}
+.upcoming-events .events .event:first-child hr, .upcoming-events .events .event:nth-child(3) hr {
+  background-color: #C19B61;
+  border-color: #C19B61;
+}
+.upcoming-events .events .event:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
+  background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
+  background-size: cover;
+}
+.upcoming-events .events .event:last-child {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
+  background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
+  background-size: cover;
+}
+.upcoming-events .events .event .date {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 70%;
+  margin: 1.5rem auto 0 auto;
+  padding: 1rem 1rem 3rem 1rem;
+  text-align: center;
+}
+.upcoming-events .events .event .date .date-number {
+  font-family: "Neuton", serif;
+  font-size: 8rem;
+  font-weight: 400;
+}
+.upcoming-events .events .event .date hr {
+  width: 70%;
+}
+.upcoming-events .events .event .date .date-month {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Neuton", serif;
+  font-weight: 300;
+}
+.upcoming-events .events .event .event-name {
+  text-align: center;
+  margin: 1.5rem auto;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.upcoming-events .info {
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.upcoming-events .info a {
+  color: #C19B61;
+  text-decoration: none;
+  border-bottom: 2px solid #C19B61;
 }
