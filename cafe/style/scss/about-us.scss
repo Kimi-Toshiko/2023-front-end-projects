@@ -1,0 +1,25 @@
+@import 'mixins';
+@import 'vars';
+
+.coffee-house-path {
+    background-color: $brown;
+    padding: 1.2rem 1rem;
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.45);
+    .path {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.coffee-house-about-us {
+    @include text-black;
+    @include text-font;
+    .about-us {
+        img {
+            width: 10%;
+            height: auto;
+        }
+    }
+}

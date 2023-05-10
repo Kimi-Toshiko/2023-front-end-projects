@@ -1911,3 +1911,29 @@ footer .copyright p {
   font-family: "Neuton", serif;
   text-transform: uppercase;
 }
+
+.coffee-house-path {
+  background-color: #C19B61;
+  padding: 1.2rem 1rem;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+}
+.coffee-house-path .path {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.coffee-house-about-us h1, .coffee-house-about-us h2, .coffee-house-about-us h3, .coffee-house-about-us h4, .coffee-house-about-us h5, .coffee-house-about-us h6, .coffee-house-about-us p {
+  color: #252525;
+}
+.coffee-house-about-us h1, .coffee-house-about-us h2, .coffee-house-about-us h3, .coffee-house-about-us h4, .coffee-house-about-us h5, .coffee-house-about-us h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-about-us p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-about-us .about-us img {
+  width: 10%;
+  height: auto;
+}
