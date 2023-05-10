@@ -81,6 +81,14 @@ header {
                         color: $lightgray;
                         text-decoration: underline;
                     }
+                    &.active {
+                        color: $darkbrown;
+                        transition: all .3s;
+                        &:hover, &:active {
+                            color: $brown;
+                            transition: all .3s;
+                        }
+                    }
                 }
             }
         }

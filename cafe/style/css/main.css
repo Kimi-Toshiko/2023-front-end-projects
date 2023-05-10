@@ -113,6 +113,16 @@ header {
   color: #D3D3D3;
   text-decoration: underline;
 }
+.navbar nav ul li a.active {
+  color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar nav ul li a.active:hover, .navbar nav ul li a.active:active {
+  color: #C19B61;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .navbar .lang {
   display: -webkit-box;
   display: -ms-flexbox;
