@@ -1,0 +1,51 @@
+@import 'mixins';
+@import 'vars';
+
+.coffee-house-full-menu {
+    @include text-black;
+    @include text-font;
+
+    .full-menu {
+        margin-top: 3rem;
+        hr {
+            margin: 1.5rem auto;
+        }
+        .menu-item {
+            width: 100%;
+            @include flex (row, no-wrap, flex-end);
+            margin: 3rem auto;
+            box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.45);
+            -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.45);
+            -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.45);
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+            .menu-info {
+                color: $black;
+                width: 50%;
+                text-align: center;
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    font-family: $important-info-font;
+                    margin: 3rem auto 1.5rem auto;
+                }
+                ul {
+                    li {
+                        margin-bottom: .7rem;
+                    }
+                }
+            }
+            .menu-image {
+                width: 50%;
+                figure {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1981,3 +1981,66 @@ footer .copyright p {
 .coffee-house-about-us .about-us .images figure img {
   width: 95%;
 }
+
+.coffee-house-full-menu h1, .coffee-house-full-menu h2, .coffee-house-full-menu h3, .coffee-house-full-menu h4, .coffee-house-full-menu h5, .coffee-house-full-menu h6, .coffee-house-full-menu p {
+  color: #252525;
+}
+.coffee-house-full-menu h1, .coffee-house-full-menu h2, .coffee-house-full-menu h3, .coffee-house-full-menu h4, .coffee-house-full-menu h5, .coffee-house-full-menu h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-full-menu p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-full-menu .full-menu {
+  margin-top: 3rem;
+}
+.coffee-house-full-menu .full-menu hr {
+  margin: 1.5rem auto;
+}
+.coffee-house-full-menu .full-menu .menu-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+}
+.coffee-house-full-menu .full-menu .menu-item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.coffee-house-full-menu .full-menu .menu-item .menu-info {
+  color: #252525;
+  width: 50%;
+  text-align: center;
+}
+.coffee-house-full-menu .full-menu .menu-item .menu-info h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Neuton", serif;
+  margin: 3rem auto 1.5rem auto;
+}
+.coffee-house-full-menu .full-menu .menu-item .menu-info ul li {
+  margin-bottom: 0.7rem;
+}
+.coffee-house-full-menu .full-menu .menu-item .menu-image {
+  width: 50%;
+}
+.coffee-house-full-menu .full-menu .menu-item .menu-image figure img {
+  width: 100%;
+  height: auto;
+}
