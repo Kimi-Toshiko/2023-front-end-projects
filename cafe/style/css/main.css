@@ -2044,3 +2044,105 @@ footer .copyright p {
   width: 100%;
   height: auto;
 }
+
+.coffee-house-blog-blog {
+  margin-top: 3rem;
+}
+.coffee-house-blog-blog h1, .coffee-house-blog-blog h2, .coffee-house-blog-blog h3, .coffee-house-blog-blog h4, .coffee-house-blog-blog h5, .coffee-house-blog-blog h6, .coffee-house-blog-blog p {
+  color: #252525;
+}
+.coffee-house-blog-blog h1, .coffee-house-blog-blog h2, .coffee-house-blog-blog h3, .coffee-house-blog-blog h4, .coffee-house-blog-blog h5, .coffee-house-blog-blog h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-blog-blog p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-blog-blog hr {
+  margin: 2rem auto;
+}
+.coffee-house-blog-blog p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 2rem auto;
+}
+.coffee-house-blog-blog .blog-blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item {
+  width: 45%;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item figure img {
+  width: 100%;
+  height: auto;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 1.5rem auto;
+  width: 90%;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item p {
+  width: 90%;
+  text-align: justify;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 1rem auto;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info .item-date {
+  font-weight: 800;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info a {
+  text-decoration: none;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info a .btn {
+  background-color: #C19B61;
+  height: 2rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  border-radius: 5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info a .btn p {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 0.5rem;
+}
+.coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info a:hover .btn, .coffee-house-blog-blog .blog-blogs .blog-item .item-imp-info a:active .btn {
+  background-color: #8f682d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
