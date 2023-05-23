@@ -2146,3 +2146,28 @@ footer .copyright p {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.coffee-house-blog-inside {
+  margin-top: 3rem;
+}
+.coffee-house-blog-inside h1, .coffee-house-blog-inside h2, .coffee-house-blog-inside h3, .coffee-house-blog-inside h4, .coffee-house-blog-inside h5, .coffee-house-blog-inside h6, .coffee-house-blog-inside p {
+  color: #252525;
+}
+.coffee-house-blog-inside h1, .coffee-house-blog-inside h2, .coffee-house-blog-inside h3, .coffee-house-blog-inside h4, .coffee-house-blog-inside h5, .coffee-house-blog-inside h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-blog-inside p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-blog-inside .blog-inside {
+  width: 50% !important;
+}
+.coffee-house-blog-inside .blog-inside hr {
+  margin: 2rem auto;
+}
+.coffee-house-blog-inside .blog-inside .blog-inside-date {
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
