@@ -2223,3 +2223,12 @@ footer .copyright p {
 .coffee-house-blog-inside .blog-inside .blog-article .blog-inside-imgs img {
   width: 95%;
 }
+
+.recipes-recipes .recipes-item {
+  width: 30% !important;
+}
+.recipes-recipes .recipes-item strong {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
