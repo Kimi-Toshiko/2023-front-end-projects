@@ -89,7 +89,52 @@
             text-align: center;
             font-weight: 800;
             font-size: .9rem;
-            margin-bottom: 2rem;
+        }
+        .blog-article {
+            p {
+                margin: 1rem auto;
+            }
+            figure {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .blockquote-quote {
+                margin: 3rem auto 5rem auto;
+                width: 70%;
+                font-weight: 700;
+                font-style: italic;
+                &::before {
+                    content: "``";
+                    color: $brown;
+                    font-weight: bold;
+                    font-size: 3rem;
+                    position: absolute;
+                    left: 25%;
+                }
+                &::after {
+                    content: "``";
+                    color: $brown;
+                    width: 2rem;
+                    font-weight: bold;
+                    font-size: 3rem;
+                    position: absolute;
+                    right: 25%;
+                }
+                .quote-citation {
+                    display: block;
+                    color: $black;
+                    text-align: right;
+                    font-weight: 300;
+                }
+            }
+            .blog-inside-imgs {
+                @include flex (row, no-wrap, space-between);
+                img {
+                    width: 95%;
+                }
+            }
         }
     }
 }
