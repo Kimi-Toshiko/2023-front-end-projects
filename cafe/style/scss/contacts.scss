@@ -1,0 +1,49 @@
+@import 'mixins';
+@import 'vars';
+.coffee-house-contacts-page {
+    .contacts {
+        @include text-black;
+        @include text-font;
+        margin-top: 2rem;
+        hr {
+            margin: 2rem auto;
+        }
+        .contacts-info {
+            width: 80% !important;
+            margin: 3rem auto;
+            @include flex (row, no-wrap, space-between);
+            h3 {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: .05rem;
+                margin-bottom: .5rem;
+            }
+            .info {
+                @include flex (column, no-wrap, space-between);
+                p {
+                    margin: .5rem 0 .5rem 0;
+                }
+            }
+            .location {
+                margin-bottom: 1rem;
+            }
+            .social-media {
+                .items {
+                    @include flex (row, no-wrap, space-between);
+                    margin-top: 1rem;
+                    .item {
+                        @include flex (row, no-wrap, flex-start);
+                        align-content: center;
+                        align-items: center;
+                        i {
+                            color: $black;
+                            font-size: 1.5rem;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

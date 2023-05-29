@@ -1737,22 +1737,22 @@ section > div {
 .upcoming-events .events .event {
   width: 25%;
 }
-.upcoming-events .events .event:first-child, .upcoming-events .events .event:nth-child(3) {
+.upcoming-events .events .event:nth-child(2n-1) {
   background-color: #C19B61;
 }
-.upcoming-events .events .event:first-child .date-number, .upcoming-events .events .event:first-child .date-month, .upcoming-events .events .event:nth-child(3) .date-number, .upcoming-events .events .event:nth-child(3) .date-month {
+.upcoming-events .events .event:nth-child(2n-1) .date-number, .upcoming-events .events .event:nth-child(2n-1) .date-month {
   color: #C19B61 !important;
 }
-.upcoming-events .events .event:first-child hr, .upcoming-events .events .event:nth-child(3) hr {
+.upcoming-events .events .event:nth-child(2n-1) hr {
   background-color: #C19B61;
   border-color: #C19B61;
 }
-.upcoming-events .events .event:nth-child(2) {
+.upcoming-events .events .event:nth-child(2), .upcoming-events .events .event:nth-child(6) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
   background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
   background-size: cover;
 }
-.upcoming-events .events .event:last-child {
+.upcoming-events .events .event:nth-child(4) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
   background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
   background-size: cover;
@@ -2342,4 +2342,135 @@ footer .copyright p {
   font-weight: 300;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.full-events-page hr {
+  margin: 2rem auto;
+}
+.full-events-page h2 {
+  margin-top: 2rem;
+}
+.full-events-page .events {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+}
+.full-events-page .events .event {
+  width: 30%;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.full-events-page .events .event .event-info {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.full-events-page .events .event .event-info p:first-child {
+  margin-bottom: 1rem;
+}
+.full-events-page .events .event .event-info strong {
+  font-weight: 800;
+}
+
+.coffee-house-contacts-page .contacts {
+  margin-top: 2rem;
+}
+.coffee-house-contacts-page .contacts h1, .coffee-house-contacts-page .contacts h2, .coffee-house-contacts-page .contacts h3, .coffee-house-contacts-page .contacts h4, .coffee-house-contacts-page .contacts h5, .coffee-house-contacts-page .contacts h6, .coffee-house-contacts-page .contacts p {
+  color: #252525;
+}
+.coffee-house-contacts-page .contacts h1, .coffee-house-contacts-page .contacts h2, .coffee-house-contacts-page .contacts h3, .coffee-house-contacts-page .contacts h4, .coffee-house-contacts-page .contacts h5, .coffee-house-contacts-page .contacts h6 {
+  font-family: "Neuton", serif;
+}
+.coffee-house-contacts-page .contacts p {
+  font-family: "Nunito", sans-serif;
+}
+.coffee-house-contacts-page .contacts hr {
+  margin: 2rem auto;
+}
+.coffee-house-contacts-page .contacts .contacts-info {
+  width: 80% !important;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-contacts-page .contacts .contacts-info h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+}
+.coffee-house-contacts-page .contacts .contacts-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.coffee-house-contacts-page .contacts .contacts-info .info p {
+  margin: 0.5rem 0 0.5rem 0;
+}
+.coffee-house-contacts-page .contacts .contacts-info .location {
+  margin-bottom: 1rem;
+}
+.coffee-house-contacts-page .contacts .contacts-info .social-media .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+.coffee-house-contacts-page .contacts .contacts-info .social-media .items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.coffee-house-contacts-page .contacts .contacts-info .social-media .items .item i {
+  color: #252525;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
 }
