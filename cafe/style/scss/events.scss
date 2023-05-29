@@ -1,0 +1,36 @@
+@import 'mixins';
+@import 'vars';
+
+.full-events-page {
+    hr {
+        margin: 2rem auto;
+    }
+    h2 {
+        margin-top: 2rem;
+    }
+    .events {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: 2rem auto;
+        .event {
+            width: 30%;
+            margin-bottom: 2rem;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            .event-info {
+                background-color: $white;
+                padding: 2rem;
+                p {
+                    &:first-child {
+                        margin-bottom: 1rem;
+                    }
+                }
+                strong {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
