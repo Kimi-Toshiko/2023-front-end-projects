@@ -1151,7 +1151,7 @@ section > div {
 
         .event {
             width: 25%;
-            &:first-child, &:nth-child(3) {
+            &:nth-child(2n-1) {
                 background-color: $brown;
                 .date-number, .date-month {
                     color: $brown !important;
@@ -1161,10 +1161,10 @@ section > div {
                     border-color: $brown;
                 }
             }
-            &:nth-child(2) {
+            &:nth-child(2), &:nth-child(6) {
                 @include bg-dark ($index-events-1, cover);
             }
-            &:last-child {
+            &:nth-child(4) {
                 @include bg-dark ($index-events-2, cover);
             }
             .date {

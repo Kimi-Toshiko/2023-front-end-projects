@@ -1737,22 +1737,22 @@ section > div {
 .upcoming-events .events .event {
   width: 25%;
 }
-.upcoming-events .events .event:first-child, .upcoming-events .events .event:nth-child(3) {
+.upcoming-events .events .event:nth-child(2n-1) {
   background-color: #C19B61;
 }
-.upcoming-events .events .event:first-child .date-number, .upcoming-events .events .event:first-child .date-month, .upcoming-events .events .event:nth-child(3) .date-number, .upcoming-events .events .event:nth-child(3) .date-month {
+.upcoming-events .events .event:nth-child(2n-1) .date-number, .upcoming-events .events .event:nth-child(2n-1) .date-month {
   color: #C19B61 !important;
 }
-.upcoming-events .events .event:first-child hr, .upcoming-events .events .event:nth-child(3) hr {
+.upcoming-events .events .event:nth-child(2n-1) hr {
   background-color: #C19B61;
   border-color: #C19B61;
 }
-.upcoming-events .events .event:nth-child(2) {
+.upcoming-events .events .event:nth-child(2), .upcoming-events .events .event:nth-child(6) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
   background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop.jpg") no-repeat;
   background-size: cover;
 }
-.upcoming-events .events .event:last-child {
+.upcoming-events .events .event:nth-child(4) {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, 0.5)), to(rgba(40, 40, 40, 0.5))), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
   background: linear-gradient(rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url("../../assets/imgs/index/table-at-the-coffee-shop-2.jpg") no-repeat;
   background-size: cover;
@@ -2342,4 +2342,37 @@ footer .copyright p {
   font-weight: 300;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.full-events-page hr {
+  margin: 2rem auto;
+}
+.full-events-page h2 {
+  margin-top: 2rem;
+}
+.full-events-page .events {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 2rem auto;
+}
+.full-events-page .events .event {
+  width: 30%;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.full-events-page .events .event .event-info {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.full-events-page .events .event .event-info p:first-child {
+  margin-bottom: 1rem;
+}
+.full-events-page .events .event .event-info strong {
+  font-weight: 800;
 }
